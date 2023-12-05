@@ -77,4 +77,4 @@ test: $(program)
 	./$(program)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) -runs 100
+	$(LAUNCHER) ./$(program) -runs 1

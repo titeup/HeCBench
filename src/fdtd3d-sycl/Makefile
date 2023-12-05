@@ -75,5 +75,5 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) --dimx=192 --dimy=184 --timesteps=90
+	$(LAUNCHER) ./$(program) --dimx=192 --dimy=184 --timesteps=5
 

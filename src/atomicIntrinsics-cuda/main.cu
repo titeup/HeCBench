@@ -25,7 +25,7 @@
 template <class T>
 void testcase(const int repeat)
 {
-  unsigned int len = 1 << 27;
+  unsigned int len = 1 << 8;
   unsigned int numThreads = 256;
   unsigned int numBlocks = (len + numThreads - 1) / numThreads;
   T gpuData[] = {0, 0, (T)-256, 256, 255, 0, 255, 0, 0};

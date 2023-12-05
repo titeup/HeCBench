@@ -74,4 +74,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) 480 640 100
+	$(LAUNCHER) ./$(program) 480 640 1

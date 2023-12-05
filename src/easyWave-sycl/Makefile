@@ -84,5 +84,5 @@ clean:
 run: $(program)
 	$(LAUNCHER) ./$(program) -grid ../easyWave-omp/data/grids/e2Asean.grd \
                      -source ../easyWave-omp/data/faults/BengkuluSept2007.flt \
-                     -time 120 
+                     -time 10
 

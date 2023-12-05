@@ -80,7 +80,7 @@ __global__ void atomic_reduction_v16(int *in, int* out, int arrayLength) {
 
 int main(int argc, char** argv)
 {
-  unsigned int arrayLength = 52428800;
+  unsigned int arrayLength = 65536;
   unsigned int threads=256;
   if(argc == 3) {
     arrayLength=atoi(argv[1]);

@@ -77,4 +77,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) input.txt 10000
+	$(LAUNCHER) ./$(program) input.txt 1

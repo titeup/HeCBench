@@ -1,4 +1,4 @@
-const int WSIZE = 12000;          // Walker
+const int WSIZE = 120;          // Walker
 const int NSIZE = 2003;           // Values
 const int MSIZE = NSIZE*3+3;      // Gradient vectors
 const int OSIZE = NSIZE*9+9;      // Hessian Matrices 

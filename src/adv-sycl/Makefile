@@ -82,5 +82,5 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) 7 15 8000 100
+	$(LAUNCHER) ./$(program) 7 15 8000 1
 

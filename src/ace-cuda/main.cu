@@ -5,9 +5,9 @@
 #include <cuda.h>
 
 //define the data set size (cubic volume)
-#define DATAXSIZE 600
-#define DATAYSIZE 600
-#define DATAZSIZE 600
+#define DATAXSIZE 100
+#define DATAYSIZE 100
+#define DATAZSIZE 100
 
 typedef double nRarray[DATAYSIZE][DATAXSIZE];
 

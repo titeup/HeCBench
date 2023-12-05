@@ -80,7 +80,7 @@ template <typename T>
 void testcase(sycl::queue &q, const int repeat)
 {
   //unsigned int len = 1 << 27;
-  unsigned int len = 1 << 16;
+  unsigned int len = 1 << 8;
   unsigned int localWorkSize = 256;
   unsigned int globalWorkSize = (len + localWorkSize - 1) /
                                 localWorkSize * localWorkSize;

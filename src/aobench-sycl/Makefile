@@ -74,4 +74,4 @@ clean:
 	rm -rf $(program) $(obj) ao.ppm
 
 run: $(program)
-	$(LAUNCHER) ./$(program) 100
+	$(LAUNCHER) ./$(program) 1

@@ -74,4 +74,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) ./data/lenaRGB.ppm 10000
+	$(LAUNCHER) ./$(program) ./data/lenaRGB.ppm 1

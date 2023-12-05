@@ -77,4 +77,4 @@ clean:
 
 run: $(program)
 	$(LAUNCHER) ulimit -s unlimited	
-	./$(program) ../cc-cuda/delaunay_n24.egr 100
+	./$(program) ../cc-cuda/delaunay_n24.egr 1

@@ -80,4 +80,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) data/lena_std.ppm data/lena_ref.dds 100
+	$(LAUNCHER) ./$(program) data/lena_std.ppm data/lena_ref.dds 1

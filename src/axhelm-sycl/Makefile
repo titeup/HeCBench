@@ -80,5 +80,5 @@ clean:
 
 # run one- and three-dimensional kernels
 run: $(program)
-	$(LAUNCHER) ./$(program) 1 8000 100
-	./$(program) 3 8000 100
+	$(LAUNCHER) ./$(program) 1 8000 1
+	./$(program) 3 8000 1

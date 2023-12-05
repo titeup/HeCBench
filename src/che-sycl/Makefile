@@ -76,4 +76,4 @@ clean:
 run: $(program)
 	$(LAUNCHER) rm -rf out;
 	mkdir out
-	./$(program) 1000
+	./$(program) 1

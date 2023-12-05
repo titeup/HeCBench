@@ -1065,7 +1065,7 @@ static double black_scholes_merton_call(double T, double K, double S0, double r,
 
 int main(int argc, char **argv)
 {
-  const int MAX_GRID_SIZE = 2048;
+  const int MAX_GRID_SIZE = 128;
   
   // Simulation parameters.
   int num_timesteps = 100;

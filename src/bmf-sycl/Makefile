@@ -87,4 +87,4 @@ clean:
 
 # The dataset are available at https://github.com/Funatiq/cuBool 
 run: $(program)
-	$(LAUNCHER) ./$(program) ../bmf-cuda/data/MNIST.in -r 8 -l 112 -i 10000 --seed 123 --stuck 10000
+	$(LAUNCHER) ./$(program) ../bmf-cuda/data/MNIST.in -r 8 -l 112 -i 1 --seed 123 --stuck 10000

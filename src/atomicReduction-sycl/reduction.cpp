@@ -41,7 +41,7 @@ inline int atomicAdd(int& val, const int delta)
 
 int main(int argc, char** argv)
 {
-  unsigned int arrayLength = 52428800;
+  unsigned int arrayLength = 65536;
   unsigned int threads=256;
   if(argc == 3) {
       arrayLength=atoi(argv[1]);

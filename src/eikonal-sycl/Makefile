@@ -86,4 +86,4 @@ clean:
 	rm -rf $(program) $(obj) output.nrrd
 
 run: $(program)
-	$(LAUNCHER) ./$(program) -s 512
+	$(LAUNCHER) ./$(program) -s 128 -i 1

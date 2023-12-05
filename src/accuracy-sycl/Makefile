@@ -3,7 +3,7 @@
 #===============================================================================
 
 # Compiler can be set below, or via environment variable
-CC        = clang++
+CC        = icpx
 OPTIMIZE  = yes
 DEBUG     = no
 LAUNCHER  =
@@ -31,7 +31,7 @@ obj = $(source:.cpp=.o)
 
 # Standard Flags
 CFLAGS := $(EXTRA_CFLAGS) -std=c++17 -Wall -I../accuracy-cuda  -fsycl \
-          --gcc-toolchain=$(GCC_TOOLCHAIN)
+          --gcc-toolchain=
 
 # Linker Flags
 LDFLAGS = 
@@ -74,4 +74,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) 8192 10000 10 100
+	$(LAUNCHER) ./$(program) 1024 100 10 1

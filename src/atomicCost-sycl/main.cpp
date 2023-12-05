@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
   }
   const int repeat = atoi(argv[1]);
 
-  const int t = 922521600;
+  const int t = 25600;
   assert(t % BLOCK_SIZE == 0);
   
   printf("\nFP64 atomic add\n");

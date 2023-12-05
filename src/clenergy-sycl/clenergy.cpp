@@ -85,7 +85,7 @@ int main(int argc, char** argv) {
   printf("  Single-threaded single-device test run.\n");
 
   // number of atoms to simulate
-  int atomcount = 1000000;
+  int atomcount = 1000;
 
   // setup energy grid size
   // XXX this is a large test case to clearly illustrate that even while

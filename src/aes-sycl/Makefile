@@ -13,7 +13,7 @@ CUDA      = no
 CUDA_ARCH = sm_70
 HIP       = no
 HIP_ARCH  = gfx908
-GCC_TOOLCHAIN = "/auto/software/gcc/x86_64/gcc-9.1.0/"
+#GCC_TOOLCHAIN = "/auto/software/gcc/x86_64/gcc-9.1.0/"
 
 #===============================================================================
 # Program name & source code list
@@ -75,5 +75,5 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) 100 0 ../urng-sycl/URNG_Input.bmp
-	$(LAUNCHER) ./$(program) 100 1 ../urng-sycl/URNG_Input.bmp
+	$(LAUNCHER) ./$(program) 1 0 ../urng-sycl/URNG_Input.bmp
+	$(LAUNCHER) ./$(program) 1 1 ../urng-sycl/URNG_Input.bmp

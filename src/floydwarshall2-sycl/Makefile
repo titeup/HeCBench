@@ -74,5 +74,5 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) ../floydwarshall2-cuda/CollegeMsg.egr 1000
+	$(LAUNCHER) ./$(program) ../floydwarshall2-cuda/CollegeMsg.egr 1
 	#./$(program) ../floydwarshall2-cuda/soc-sign-bitcoin-alpha.egr 1000
