@@ -3,7 +3,7 @@
 #===============================================================================
 
 # Compiler can be set below, or via environment variable
-CC        = clang++
+CC        = icpx -fsycl
 OPTIMIZE  = yes
 DEBUG     = no
 LAUNCHER  =
@@ -17,7 +17,7 @@ GCC_TOOLCHAIN = "/auto/software/gcc/x86_64/gcc-9.1.0/"
 
 POINTS    = 97178
 DATAPARS  = -d ../tpacf-cuda/data/small/Datapnts.1 -p $(POINTS)
-RANDPARS  = -r ../tpacf-cuda/data/small/Randompnts -n 100 -q $(POINTS)
+RANDPARS  = -r ../tpacf-cuda/data/small/Randompnts -n 10 -q $(POINTS)
 ANALPARS  = -b 5 -l 1 -u 10000 -a -j 10
 OUTFILE   = ./small_results_test.dat
 #===============================================================================

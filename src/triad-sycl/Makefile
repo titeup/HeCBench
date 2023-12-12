@@ -3,7 +3,7 @@
 #===============================================================================
 
 # Compiler can be set below, or via environment variable
-CC        = clang++
+CC        = icpx -fsycl
 OPTIMIZE  = yes
 DEBUG     = no
 LAUNCHER  =
@@ -86,4 +86,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) --passes 100 -v
+	$(LAUNCHER) ./$(program) --passes 1 -v

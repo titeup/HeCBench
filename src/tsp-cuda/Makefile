@@ -54,4 +54,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) d493.tsp 24 100
+	$(LAUNCHER) ./$(program) d493.tsp 24 1
