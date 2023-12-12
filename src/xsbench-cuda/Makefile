@@ -59,4 +59,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) -s large -m event -r 10
+	$(LAUNCHER) ./$(program) -s samll -m event -r 1
