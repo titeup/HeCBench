@@ -20,7 +20,7 @@
 
 // Problem size 
 #ifndef MAP_SIZE 
-#define MAP_SIZE 1024
+#define MAP_SIZE 256
 #endif
 
 // Thread block dimensions
