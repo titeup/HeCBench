@@ -3,7 +3,7 @@
 #===============================================================================
 
 # Compiler can be set below, or via environment variable
-CC        = clang++
+CC        = icpx -fsycl
 OPTIMIZE  = yes
 DEBUG     = no
 LAUNCHER  =
@@ -33,7 +33,7 @@ obj = $(source:.cpp=.o)
 SUB_GROUP = 32
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++17 -Wall -fsycl -I../vote-cuda
+CFLAGS := $(EXTRA_CFLAGS) -std=c++17 -Wall -fsycl -I../vote-cuda -DWARP_SIZE=$(SUB_GROUP)
 
 # Linker Flags
 LDFLAGS = 
