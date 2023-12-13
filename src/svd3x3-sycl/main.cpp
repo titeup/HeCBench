@@ -79,6 +79,7 @@ int main(int argc, char* argv[])
 
   std::ifstream myfile;
   myfile.open(filename);
+  if (!myfile) std::cerr<<"error opening the file"<<std::endl;
   int testsSize;
   myfile >> testsSize;
   std::cout << "dataset size: " << testsSize << std::endl;

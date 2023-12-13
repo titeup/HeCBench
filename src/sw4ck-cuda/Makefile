@@ -64,4 +64,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) sw4ck.in 100
+	$(LAUNCHER) ./$(program) sw4ck.in 10

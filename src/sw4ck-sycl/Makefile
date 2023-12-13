@@ -3,7 +3,7 @@
 #===============================================================================
 
 # Compiler can be set below, or via environment variable
-CC        = clang++
+CC        = icpx -fsycl
 OPTIMIZE  = yes
 DEBUG     = no
 LAUNCHER  =
@@ -84,4 +84,4 @@ clean:
 	rm -rf $(program) $(obj)
 
 run: $(program)
-	$(LAUNCHER) ./$(program) ../sw4ck-cuda/sw4ck.in 100
+	$(LAUNCHER) ./$(program) ../sw4ck-cuda/sw4ck.in 10
