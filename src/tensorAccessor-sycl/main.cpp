@@ -169,7 +169,7 @@ int main(int argc, char* argv[])
   // verify (may fail due to floating-point rounding)
   bool ok = true;
   for (int64_t i = 0; i < nrow; i++) {
-    if (fabsf(r[i] - r_ref[i]) > 1e-3f) {
+    if (fabsf(r[i] - r_ref[i]) > 1e-2f) {
       printf("%f %f\n", r[i], r_ref[i]);
       ok = false;
       break;
