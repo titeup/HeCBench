@@ -6,7 +6,7 @@
 ifeq ($(VENDOR), codeplay)
 CC        = compute++
 else
-CC        = clang++
+CC        = icpx -fsycl
 endif
 LAUNCHER=
 
