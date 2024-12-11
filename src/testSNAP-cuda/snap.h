@@ -27,15 +27,11 @@ typedef struct
 
 double factorial(int);
 double deltacg(int, int, int);
+double compute_sfac(double, double, int);
+double compute_dsfac(double, double, int);
 int compute_ncoeff(int twojmax);
 void options(int argc, char* argv[]);
 inline double elapsedTime(timeval start_time, timeval end_time);
-
-__device__
-double compute_sfac(double, double, int);
-__device__
-double compute_dsfac(double, double, int);
-__device__
 void compute_duarray(
     const int natom,
     const int nbor,
