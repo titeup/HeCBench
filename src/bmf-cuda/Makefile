@@ -38,7 +38,7 @@ headers = \
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = 

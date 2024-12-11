@@ -24,7 +24,7 @@ obj = $(source:.cu=.o)
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -I. -I./ \
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -I. -I./ \ -Wfatal-errors
           -DREFDATA_TWOJ=14  -arch=$(ARCH)
 
 # Linker Flags

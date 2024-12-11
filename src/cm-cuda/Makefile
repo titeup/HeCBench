@@ -22,7 +22,7 @@ obj = main.o io.o process.o
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH)
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = 

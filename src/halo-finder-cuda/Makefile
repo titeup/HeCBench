@@ -73,7 +73,7 @@ include include.mk
 include dfft/include.mk
 CXXFLAGS += ${DFFT_CXXFLAGS}
 
-CFLAGS += ${HACC_MPI_CFLAGS}
+CFLAGS += ${HACC_MPI_CFLAGS} -Wfatal-errors
 CXXFLAGS += ${HACC_MPI_CXXFLAGS}
 LDFLAGS += ${HACC_MPI_LDFLAGS}
 
@@ -86,7 +86,7 @@ CXXFLAGS += -I.
 CXXFLAGS += -x cu
 #LDFLAGS  = ${MPI_LD_FLAGS} -lmpi_cxx
 
-CFLAGS += -Idfft
+CFLAGS += -Idfft -Wfatal-errors
 CXXFLAGS += -Idfft
 
 

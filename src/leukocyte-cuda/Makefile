@@ -8,7 +8,7 @@ LAUNCHER  =
 MATRIX_DIR = ./meschach_lib
 
 # Standard flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -I$(MATRIX_DIR) --x cu
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -I$(MATRIX_DIR) --x cu -Wfatal-errors
 
 # Linker flags
 LDFLAGS = -lm

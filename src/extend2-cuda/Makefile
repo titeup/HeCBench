@@ -23,7 +23,7 @@ obj = main.o read_data.o
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -I./
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -I./ -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = 

@@ -22,7 +22,7 @@ obj = main.o kernels.o reference.o
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH)
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = 

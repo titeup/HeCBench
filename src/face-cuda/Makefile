@@ -20,7 +20,7 @@ program = vj-cpu vj-gpu
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH)
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = 

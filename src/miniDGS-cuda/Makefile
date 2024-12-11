@@ -19,7 +19,7 @@ FAST    = -O3 --use_fast_math
 LAUNCHER=
 
 # compiler flags to be used (set to compile with debugging on)
-CFLAGS = -Dp_N=$(N) -DNDG3d -DCUDA -I$(HDRDIR) -O3 -I$(CUDADIR)/include
+CFLAGS = -Dp_N=$(N) -DNDG3d -DCUDA -I$(HDRDIR) -O3 -I$(CUDADIR)/include -Wfatal-errors
 
 # link flags to be used 
 LDFLAGS	= -I$(HDRDIR) -O3 

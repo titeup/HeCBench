@@ -26,7 +26,7 @@ obj = $(source:.cu=.o)
 #===============================================================================
 
 # Standard Flags
-CFLAGS := -DNX=400 \
+CFLAGS := -DNX=400 \ -Wfatal-errors
        	  -DNZ=200 \
 	  -DSIM_TIME=600 \
 	  -DDATA_SPEC=DATA_SPEC_THERMAL \
