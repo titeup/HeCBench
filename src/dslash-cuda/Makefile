@@ -25,7 +25,8 @@ obj = $(source:.cu=.o)
 
 # Standard Flags
 # Double precision the grid size is 32^4 
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 \ -Wfatal-errors
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 \
+	  -Wfatal-errors \
           -DMILC_COMPLEX \
           -DLDIM=32 \
           -DPRECISION=1 \

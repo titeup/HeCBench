@@ -25,7 +25,8 @@ obj = $(source:.cu=.o)
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -DMAX_GPU_COUNT=$(MAX_GPU) \ -Wfatal-errors
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -DMAX_GPU_COUNT=$(MAX_GPU) \
+	  -Wfatal-errors \
           -Xcompiler -Wall -arch=$(ARCH)
 
 # Linker Flags

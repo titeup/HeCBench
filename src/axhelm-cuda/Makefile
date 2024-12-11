@@ -22,8 +22,9 @@ obj = main.o meshBasis.o
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) \ -Wfatal-errors
-          -Ddfloat=float -Ddlong=int 
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -Xcompiler -Wall -arch=$(ARCH) \
+          -Ddfloat=float -Ddlong=int \
+	  -Wfatal-errors
 
 # Linker Flags
 LDFLAGS = BlasLapack/libBlasLapack.a -lgfortran

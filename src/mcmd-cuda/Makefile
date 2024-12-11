@@ -22,7 +22,8 @@ obj = main.o force_kernel.o
 #===============================================================================
 
 # Standard Flags
-CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -arch=$(ARCH) \ -Wfatal-errors
+CFLAGS := $(EXTRA_CFLAGS) -std=c++14 -arch=$(ARCH) \
+	  -Wfatal-errors \
           -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -D__STRICT_ANSI__ \
           -DGPU
 
