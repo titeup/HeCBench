@@ -55,4 +55,4 @@ clean:
 	rm -rf $(program) $(obj) result
 
 run: $(program)
-	$(LAUNCHER) ./$(program) result 10
+	$(LAUNCHER) ./$(program) result 1
